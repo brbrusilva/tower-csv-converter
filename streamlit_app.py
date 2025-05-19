@@ -110,9 +110,9 @@ if uploaded_file:
 
         if tipo == "desconhecido" or df_convertido is None:
             st.error("❌ Não conseguimos reconhecer o tipo da planilha.")
-            st.info("💡 Sugestões:
+            st.info("""💡 Sugestões:
 - Verifique se as colunas têm nomes como 'CEP inicial', 'Preço (R$)', 'Cidade origem'
-- Inclua ao menos 5 colunas comuns ao padrão Tower")
+- Inclua ao menos 5 colunas comuns ao padrão Tower""")
             st.stop()
 
         st.success(f"✅ Planilha identificada como tipo '{tipo.replace('_', ' ')}' e convertida com sucesso!")
